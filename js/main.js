@@ -80,7 +80,22 @@
     }, { passive: true });
   });
 
-  /* ---------- 5. Nav: transparente sobre hero → blanco al hacer scroll ---------- */
+  /* ---------- 5. Metodología CEAC: ocultar el hint de scroll tras el primer desplazamiento ---------- */
+  const metodologiaScroll = document.getElementById('metodologiaScroll');
+  const metodologiaHint  = document.getElementById('metodologiaHint');
+  if (metodologiaScroll && metodologiaHint) {
+    let dismissed = false;
+    metodologiaScroll.addEventListener('scroll', () => {
+      if (!dismissed && metodologiaScroll.scrollLeft > 30) {
+        metodologiaHint.style.transition = 'opacity 0.4s ease';
+        metodologiaHint.style.opacity = '0';
+        setTimeout(() => metodologiaHint.remove(), 500);
+        dismissed = true;
+      }
+    }, { passive: true });
+  }
+
+  /* ---------- 6. Nav: transparente sobre hero → blanco al hacer scroll ---------- */
   const nav = document.getElementById('nav');
   const navLogo = document.getElementById('navLogo');
   const navLinks = document.getElementById('navLinks');

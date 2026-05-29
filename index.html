@@ -835,18 +835,36 @@
     </section>
 
     <!-- ==================== METODOLOGÍA CEAC ==================== -->
-    <!-- Fondo bicolor: el div lavanda mide en altura el mismo % que la zona lavanda DENTRO de la imagen,
-         así el corte queda perfectamente alineado independientemente del ancho del viewport. -->
-    <section id="metodologia" class="bg-white relative overflow-hidden">
-      <!-- Backdrop lavanda detrás de la imagen: ocupa el 60% superior (alineado con la zona lavanda interna de la imagen) -->
-      <div class="absolute inset-x-0 top-0 h-[60%] bg-ceac-skyBg" aria-hidden="true"></div>
+    <section id="metodologia" class="bg-ceac-skyBg py-12 md:py-16 lg:py-20">
+      <div class="max-w-6xl mx-auto px-4 lg:px-8">
+        <!-- Encabezado -->
+        <div class="reveal max-w-xl mb-8 md:mb-12">
+          <h2 class="font-display text-3xl md:text-4xl lg:text-5xl text-ceac-blue mb-3 leading-tight">
+            Metodología <span class="italic">CEAC</span>
+          </h2>
+          <p class="text-ceac-blue font-semibold text-sm md:text-base mb-3">El camino que recorrerás como alumno</p>
+          <p class="text-xs md:text-sm text-black leading-relaxed">
+            Te acompañamos a lo largo de todo el proceso, desde el primer día hasta tu salida al
+            mercado laboral.
+          </p>
+        </div>
+      </div>
 
-      <div class="relative max-w-6xl mx-auto px-4 lg:px-8 pt-12 md:pt-16 pb-8 md:pb-12">
-        <h2 class="sr-only">Metodología CEAC — El camino que recorrerás como alumno</h2>
-        <div class="reveal">
-          <img src="assets/img/metodologia-ceac.png"
-               alt="Metodología CEAC. El camino que recorrerás como alumno: (01) Formación teórica a tu propio ritmo con asesoramiento continuo del equipo docente; (02) Recursos y campus con material 100% digital, experiencias gamificadas y comunidad de alumnos; (03) Prácticas garantizadas para poner en práctica lo aprendido y llegar al mundo laboral con experiencia."
-               class="w-full h-auto" />
+      <!-- Ilustración del camino: scroll horizontal -->
+      <div class="reveal relative">
+        <!-- Pista de scroll a sangre (la imagen se desborda y el usuario hace scroll horizontal) -->
+        <div id="metodologiaScroll" class="metodologia-scroll overflow-x-auto overflow-y-hidden scroll-smooth">
+          <div class="max-w-6xl mx-auto px-4 lg:px-8">
+            <img src="assets/img/metodologia-ceac.png"
+                 alt="Camino del alumno: (01) Formación teórica a tu propio ritmo con asesoramiento continuo; (02) Recursos y campus con material 100% digital, experiencias gamificadas y comunidad; (03) Prácticas garantizadas para llegar al mundo laboral con experiencia; (04) Titulación y empleo con título acreditado y bolsa de empleo; Tu profesión: impulsa tu carrera."
+                 class="block h-auto"
+                 style="min-width: 1000px; width: 100%; max-width: 1400px;" />
+          </div>
+        </div>
+
+        <!-- Hint visual de scroll (sólo móvil, desaparece tras hacer scroll) -->
+        <div id="metodologiaHint" class="md:hidden text-center mt-3 text-[11px] text-ceac-blue/70 italic">
+          ← desliza para ver el camino completo →
         </div>
       </div>
     </section>

@@ -11,6 +11,20 @@ html {
 /* Nav flota encima del hero; activamos sombra suave solo cuando es sólido */
 #nav.bg-white\/95 { box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
 
+/* Pista del camino de la metodología — scrollbar fina y discreta en lavanda */
+.metodologia-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #0017EC #E8EEF7;
+  -webkit-overflow-scrolling: touch;
+}
+.metodologia-scroll::-webkit-scrollbar { height: 6px; }
+.metodologia-scroll::-webkit-scrollbar-track { background: transparent; }
+.metodologia-scroll::-webkit-scrollbar-thumb {
+  background: rgba(0,23,236,0.35);
+  border-radius: 6px;
+}
+.metodologia-scroll::-webkit-scrollbar-thumb:hover { background: rgba(0,23,236,0.6); }
+
 
 body {
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
