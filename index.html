@@ -166,35 +166,32 @@
           </article>
         </div>
 
-        <!-- Vídeo "Bienvenido" con botón play -->
+        <!-- Vídeo "Bienvenido" — facade: poster + botón play que carga el iframe al pulsar -->
         <div class="mt-6 md:mt-8 reveal">
-          <button type="button" id="welcomeVideo"
-                  class="group relative w-full aspect-[16/7] md:aspect-[16/6] rounded-2xl overflow-hidden bg-gray-400 focus:outline-none focus:ring-4 focus:ring-ceac-blue/30"
-                  aria-label="Reproducir vídeo de bienvenida">
-            <!-- TODO: Sustituir por poster real del vídeo. Foto en escala de grises por ahora -->
-            <img src="assets/img/hero-recepcion.png"
-                 alt=""
-                 aria-hidden="true"
-                 class="absolute inset-0 w-full h-full object-cover opacity-50 grayscale" />
-            <!-- Capa gris para imitar el placeholder del diseño -->
-            <div class="absolute inset-0 bg-gray-500/50"></div>
-
-            <!-- Texto "Bienvenido" -->
-            <span class="absolute inset-0 flex items-center justify-center">
-              <span class="font-display italic text-ceac-blue text-5xl md:text-7xl lg:text-8xl leading-none drop-shadow-sm">
-                Bienvenido
+          <div id="welcomeVideoWrap" class="relative w-full aspect-[16/7] md:aspect-[16/6] rounded-2xl overflow-hidden bg-gray-400">
+            <button type="button" id="welcomeVideo"
+                    data-yt="55SxchUcmng"
+                    class="group absolute inset-0 w-full h-full focus:outline-none focus:ring-4 focus:ring-ceac-blue/30"
+                    aria-label="Reproducir vídeo de bienvenida">
+              <img src="assets/img/hero-recepcion.png"
+                   alt=""
+                   aria-hidden="true"
+                   class="absolute inset-0 w-full h-full object-cover opacity-50 grayscale" />
+              <div class="absolute inset-0 bg-gray-500/50"></div>
+              <span class="absolute inset-0 flex items-center justify-center">
+                <span class="font-display italic text-ceac-blue text-5xl md:text-7xl lg:text-8xl leading-none drop-shadow-sm">
+                  Bienvenido
+                </span>
               </span>
-            </span>
-
-            <!-- Botón play centrado -->
-            <span class="absolute inset-0 flex items-center justify-center">
-              <span class="w-14 h-14 md:w-16 md:h-16 rounded-full bg-white/95 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="#0017EC" aria-hidden="true">
-                  <path d="M8 5v14l11-7z"/>
-                </svg>
+              <span class="absolute inset-0 flex items-center justify-center">
+                <span class="w-14 h-14 md:w-16 md:h-16 rounded-full bg-white/95 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="#0017EC" aria-hidden="true">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </span>
               </span>
-            </span>
-          </button>
+            </button>
+          </div>
         </div>
       </div>
     </section>

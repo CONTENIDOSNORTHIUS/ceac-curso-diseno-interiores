@@ -80,7 +80,26 @@
     }, { passive: true });
   });
 
-  /* ---------- 5. Metodología CEAC: ocultar el hint de scroll tras el primer desplazamiento ---------- */
+  /* ---------- 5. Vídeo "Bienvenido": facade → iframe al pulsar (ahorra carga inicial) ---------- */
+  const welcomeBtn = document.getElementById('welcomeVideo');
+  const welcomeWrap = document.getElementById('welcomeVideoWrap');
+  if (welcomeBtn && welcomeWrap) {
+    welcomeBtn.addEventListener('click', () => {
+      const id = welcomeBtn.dataset.yt;
+      if (!id) return;
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
+      iframe.title = 'Vídeo de bienvenida CEAC';
+      iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+      iframe.setAttribute('allowfullscreen', '');
+      iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+      iframe.className = 'absolute inset-0 w-full h-full border-0';
+      welcomeWrap.innerHTML = '';
+      welcomeWrap.appendChild(iframe);
+    });
+  }
+
+  /* ---------- 6. Metodología CEAC: ocultar el hint de scroll tras el primer desplazamiento ---------- */
   const metodologiaScroll = document.getElementById('metodologiaScroll');
   const metodologiaHint  = document.getElementById('metodologiaHint');
   if (metodologiaScroll && metodologiaHint) {
