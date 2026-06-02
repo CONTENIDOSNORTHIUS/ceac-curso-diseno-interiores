@@ -39,9 +39,8 @@ html {
   flex: 0 0 auto;
   width: 180px;
   height: 110px;
-  background: #E5E5FA;
-  border: 1px solid rgba(0, 23, 236, 0.08);
-  border-radius: 0.75rem;
+  background: transparent;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
