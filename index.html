@@ -862,23 +862,73 @@
     <!-- ==================== EQUIPO DOCENTE ==================== -->
     <section id="equipo" class="py-16 lg:py-20 bg-white">
       <div class="max-w-6xl mx-auto px-4 lg:px-8">
-        <!-- Título centrado: "Descubre a nuestra" regular + "docente" italic -->
+        <!-- Título -->
         <h2 class="font-display text-3xl md:text-4xl lg:text-5xl text-ceac-blue mb-10 md:mb-14 reveal text-center leading-tight">
-          Descubre a nuestra<br/>
-          <span class="italic">docente</span>
+          Descubre a nuestro<br/>
+          <span class="italic">equipo docente</span>
         </h2>
 
-        <div class="flex justify-center max-w-5xl mx-auto">
-          <!-- Mónica López Suárez -->
-          <article class="bg-white rounded-2xl border border-gray-200 p-5 md:p-6 flex gap-4 md:gap-5 reveal max-w-xl">
-            <svg class="w-20 h-20 md:w-24 md:h-24 rounded-xl flex-shrink-0" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" style="background:#BFEF45">
-              <ellipse cx="48" cy="36" rx="16" ry="18" fill="white" opacity="0.9"/>
-              <path d="M16 82 Q16 60 48 60 Q80 60 80 82" fill="white" opacity="0.9"/>
-            </svg>
+        <!-- Bloque A: vídeo + perfil Pilar Perea -->
+        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto items-start mb-12">
+          <!-- Columna izquierda: vídeo -->
+          <div class="reveal">
+            <div id="docenteVideoWrap" class="relative w-full aspect-video rounded-2xl overflow-hidden bg-gray-200">
+              <button type="button" data-yt="1o22ySwkuBY"
+                      class="yt-facade group absolute inset-0 w-full h-full focus:outline-none focus:ring-4 focus:ring-ceac-blue/30"
+                      aria-label="Reproducir vídeo de presentación de Pilar Perea">
+                <img src="assets/img/Pilar-Perea.jpg"
+                     alt="Pilar Perea, docente del Curso de Diseño de Interiores"
+                     class="absolute inset-0 w-full h-full object-cover" />
+                <span class="absolute inset-0 flex items-center justify-center">
+                  <span class="w-14 h-14 rounded-full bg-white/95 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="#0017EC" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Columna derecha: perfil Pilar Perea -->
+          <article class="bg-white rounded-2xl border border-gray-200 p-5 md:p-6 reveal">
+            <h3 class="font-display text-lg md:text-xl text-ceac-blue mb-2">Pilar Perea</h3>
+            <p class="text-[11px] md:text-xs text-gray-700 leading-relaxed mb-2">
+              Licenciada en Periodismo por la Facultad de Ciencias de la Información de la Universidad Complutense de Madrid.
+            </p>
+            <p class="text-[11px] md:text-xs text-gray-700 leading-relaxed mb-2">
+              Directora de estilismo de Micasa y Casa Diez durante más de 5 años. Directora del plató de foto y video de Hearst España durante 2 años.
+            </p>
+            <p class="text-[11px] md:text-xs text-gray-700 leading-relaxed">
+              Imparte el Talent Lab del Curso de Diseño de Interiores de CEAC.
+            </p>
+          </article>
+        </div>
+
+        <!-- Bloque B: cards Aina Mitjans y Eva Palaudàries -->
+        <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          <!-- Aina Mitjans -->
+          <article class="bg-white rounded-2xl border border-gray-200 p-5 md:p-6 flex gap-4 md:gap-5 reveal">
+            <img src="assets/img/aina-mitjans.jpg" alt="Aina Mitjans" class="w-20 h-20 md:w-24 md:h-24 rounded-xl object-cover flex-shrink-0" />
             <div>
-              <h3 class="font-display text-lg md:text-xl text-ceac-blue mb-2">Mónica López Suárez</h3>
+              <h3 class="font-display text-lg md:text-xl text-ceac-blue mb-2">Aina Mitjans</h3>
+              <p class="text-[11px] md:text-xs text-gray-700 leading-relaxed mb-2">
+                Graduada en Diseño Interior por la Escuela ESDAP Llotja de Barcelona. Máster en Bioconstrucción por el Instituto de Bioconstrucción de España.
+              </p>
               <p class="text-[11px] md:text-xs text-gray-700 leading-relaxed">
-                Profesora de Formación Profesional apasionada por la enseñanza y el desarrollo de equipos. Con más de 15 años de experiencia, ha trabajado tanto en formación reglada como para empresas. Está especializada en gestión documental, codificación CIE-10-ES y competencias digitales.
+                Amplia experiencia en el diseño de espacios de interiores de viviendas y contract.
+              </p>
+            </div>
+          </article>
+
+          <!-- Eva Palaudàries -->
+          <article class="bg-white rounded-2xl border border-gray-200 p-5 md:p-6 flex gap-4 md:gap-5 reveal">
+            <img src="assets/img/Eva_Palaudaries.jpg" alt="Eva Palaudàries" class="w-20 h-20 md:w-24 md:h-24 rounded-xl object-cover flex-shrink-0" />
+            <div>
+              <h3 class="font-display text-lg md:text-xl text-ceac-blue mb-2">Eva Palaudàries</h3>
+              <p class="text-[11px] md:text-xs text-gray-700 leading-relaxed mb-2">
+                Licenciada en Arquitectura.
+              </p>
+              <p class="text-[11px] md:text-xs text-gray-700 leading-relaxed">
+                Arquitectura Superior en la Escuela Técnica Superior de Arquitectura de Barcelona de la Universitat Politècnica de Catalunya (ETSAB-UPC). Amplia experiencia en sostenibilidad, materiales naturales y eficiencia energética aplicada al interiorismo.
               </p>
             </div>
           </article>
